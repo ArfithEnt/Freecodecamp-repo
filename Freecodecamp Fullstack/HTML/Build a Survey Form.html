@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+</head>
+<body>
+    <h1 id="title">Survey Form</h1>
+    <p id="description">This is a survey form!!</p>
+    <form action="/###" id="survey-form" method="post">
+        <label for="name" id="name-label">Name</label>
+        <input type="text" id="name" name="name" placeholder="ex. lalala" required/>
+        <label for="email" id="email-label">Email</label>
+        <input type="email" name="email" id="email" placeholder="ex. lululu@asdasd" required>
+        <label for="number" id="number-label">Number</label>
+        <input type="number" name="number" id="number" min="5" max="100" placeholder="ex. 69">
+        <label for="dropdown">this is dropdown</label>
+        <select name="dropdown" id="dropdown">
+            <option value="dropdown-option1">option1</option>
+            <option value="dropdown-option2">option2</option>
+        </select>
+        <label for="radio">this is radio</label>
+        <input type="radio" name="radio" id="radio" value="radio1">
+        <input type="radio" name="radio" id="radio" value="radio2">
+        <p>This is Checkbox</p>
+        <label for="checkbox1">This is Checkbox1</label>
+        <input type="checkbox" name="checkbox1" id="checkbox1" value="checkbox1">
+        <label for="checkbox2">This is Checkbox2</label>
+        <input type="checkbox" name="checkbox2" id="checkbox2" value="checkbox2">
+        <label for="checkbox3">This is Checkbox3</label>
+        <input type="checkbox" name="checkbox3" id="checkbox3" value="checkbox3">
+        <label for="textarea">Additional Comments?</label>
+        <textarea name="textarea" id="textarea"></textarea>
+        <button type="submit" id="submit"></button>
+    </form>
+</body>
+</html>
